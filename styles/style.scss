@@ -334,7 +334,7 @@ nav {
         background-position: 50% 50%;
         background-repeat: no-repeat;
         border-radius: 10px;
-        padding: 100px 120px;
+        padding: 60px 60px 100px 80px;
 
         h1,
         p {
@@ -484,6 +484,9 @@ nav {
 
     .articles {
         flex-direction: column;
+        .article{
+            padding: 100px 120px;
+        }
 
         .article:nth-child(1) {
             width: 100%;
