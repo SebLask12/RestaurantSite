@@ -26,16 +26,16 @@ a {
 
 #log-in {
     display: none;
-    position: absolute;
+    position: fixed;
     top: 50vh;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 70%;
+    max-width: 600px;
     padding: 1rem;
     border-radius: 5px;
     box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
     background-color: white;
-    z-index: 3;
+    z-index: 4;
 
     form {
         border: 3px solid #f1f1f1;
@@ -79,6 +79,7 @@ a {
 
     .container {
         padding: 16px;
+        
     }
 
     span.psw {
