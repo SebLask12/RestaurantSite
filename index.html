@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0">
+    <meta name="author" content="Sebastian Laskowski">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Roboto 400 i 500 -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <!-- Saira 500 -->
+    <link href="https://fonts.googleapis.com/css2?family=Saira:wght@500&display=swap" rel="stylesheet">
+    <!-- Poppins 400 i 500 -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Saira:wght@500&display=swap"
+        rel="stylesheet">
+    <!-- Rubik 400 i 500 -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Rubik:wght@500&family=Saira:wght@500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div id="log-in">
+            <form action="">
+                <div class="container">
+                    <label for="uname"><b>Nazwa użytkownika</b></label>
+                    <input type="text" placeholder="Wprowadź nazwę użytkownika" name="uname" required>
+
+                    <label for="psw"><b>Hasło</b></label>
+                    <input type="password" placeholder="Wprowadź hasło" name="psw" required>
+
+                    <button type="submit">Zaloguj</button>
+                    <label>
+                        <input type="checkbox" checked="checked" name="remember"> Zapamiętaj mnie
+                    </label>
+                </div>
+
+                <div class="container" style="background-color:#f1f1f1">
+                    <button type="button" class="cancelbtn" onclick="closeLogForm()">Anuluj</button>
+                    <span class="psw">Zapomniałeś <a href="#">hasła?</a></span>
+                </div>
+            </form>
+        </div>
+        <nav>
+            <div class="menu">
+                <div class="logo"></div>
+                <ul class="menu-links">
+                    <li><a href="#">Steaks</a></li>
+                    <li><a href="#">Burgers</a></li>
+                    <li><a href="#">French fries</a></li>
+                    <li><a href="#">Drinks</a></li>
+                    <li><a href="#">Gdzie dowozimy?</a></li>
+                    <li><a href="#">Kontakt</a></li>
+                </ul>
+            </div>
+            <div class="user-menu">
+                <a class="user-button" href="#" onclick="openLogForm()">
+                    <img src="img/mojekonto.svg" alt="">
+                    <p>Moje konto</p>
+                </a>
+                <a class="user-button" href="#">
+                    <img src="img/koszyk.svg" alt="">
+                    <p>Koszyk</p>
+                </a>
+                <a class="red-button" href="#">
+                    <img src="img/zamow_ikona.svg" alt="">
+                    <p>Zamów</p>
+                </a>
+            </div>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+        <div class="header">
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide swiper-page">
+                        <h1><span class="bg-black">Rabat 10%</span> na <br>pierwsze zamówienie!</h1>
+                        <div>
+                            <p>Do 20 stycznia złóż zamówienie na stronie i skorzystaj z <b>promocji -10%.</b> Spiesz
+                                się,
+                                czas trwania promocji do końca lutego.</p>
+                        </div>
+                        <a class="red-button-order" href="#">Zamów online</a>
+                    </div>
+                    <div class="swiper-slide swiper-page">
+                        <h1><span class="bg-black">Rabat 10%</span> na <br>pierwsze zamówienie!</h1>
+                        <div>
+                            <p>Do 20 stycznia złóż zamówienie na stronie i skorzystaj z <b>promocji -10%.</b> Spiesz
+                                się,
+                                czas trwania promocji do końca lutego.</p>
+                        </div>
+                        <a class="red-button-order" href="#">Zamów online</a>
+                    </div>
+                    <div class="swiper-slide swiper-page">
+                        <h1><span class="bg-black">Rabat 10%</span> na <br>pierwsze zamówienie!</h1>
+                        <div>
+                            <p>Do 20 stycznia złóż zamówienie na stronie i skorzystaj z <b>promocji -10%.</b> Spiesz
+                                się,
+                                czas trwania promocji do końca lutego.</p>
+                        </div>
+                        <a class="red-button-order" href="#">Zamów online</a>
+                    </div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination">
+                    <img src="img/Oval Copy 2.svg" alt="">
+                </div>
+            </div>
+            <div class="steak-picture"></div>
+        </div>
+        <div class="deliver">
+            <div class="deliver-wrapper">
+                <img id="image1" src="img/Bitmap-4.png" alt="">
+                <img id="image2" src="img/e.png" alt="">
+                <img id="image3" src="img/Bitmap.png" alt="">
+                <img id="image4" src="img/Bitmap-2.png" alt="">
+                <img id="image5" src="img/Bitmap-3.png" alt="">
+            </div>
+        </div>
+        <div class="articles">
+            <div class="article">
+                <h1>Zestaw dla 3 osób</h1>
+                <p>Razem smakuje lepiej! Zamów <br>zestawy obiadowy dla 3 osób już od <span class="bg-black"><b>39
+                            zł</b></span></p>
+                <a class="red-button-order" href="#">Zamów online</a>
+            </div>
+            <div class="article">
+                <h1>UberEats</h1>
+                <p>Zamawiaj w aplikacji <span class="bg-red"><b>10% taniej.</b></span><br> Pobierz aplikację UberEats
+                    już
+                    dziś.</p>
+                <div class="apps">
+                    <a href="#"><img src="img/Group 4.svg" alt=""></a>
+                    <a href="#"><img src="img/App_Store_(iOS).svg" alt=""></a>
+                    <a href="#"><img src="img/huawei-app-badge-9757fa 2.svg" alt=""></a>
+                </div>
+                <a class="red-button-order" href="#">Zamów online</a>
+            </div>
+        </div>
+        <div id="cookieNotice" class="light display-right">
+            <div id="closeIcon">
+            </div>
+            <div class="title-wrap">
+                <h4>Cookie Consent</h4>
+            </div>
+            <div class="content-wrap">
+                <div class="msg-wrap">
+                    <p>This website uses cookies or similar technologies, to enhance your browsing experience and
+                        provide personalized recommendations. By continuing to use our website, you agree to our <a
+                            href="#">Privacy Policy</a></p>
+                    <div class="btn-wrap">
+                        <button class="btn-primary" onclick="acceptCookieConsent();">Accept</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="overlay hidden"></div>
+        <script src="src/cookies.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+        <script src="src/swiper.js"></script>
+        <script src="src/navAnimate.js"></script>
+        <script src="src/screenRes.js"></script>
+        <script src="src/logIn.js"></script>
+
+    </div>
+</body>
+
+</html>
