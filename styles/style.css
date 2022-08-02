@@ -1,4 +1,4 @@
-@import url(../src/screenRes.js);
+@import url("../src/screenRes.js");
 :root {
   --sizeWidth: ;
   --sizeHeight: ;
@@ -8,6 +8,11 @@
   margin: 0;
   padding: 0;
   font-family: "Poppins", sans-serif;
+}
+
+.wrapper {
+  position: relative;
+  overflow-x: hidden;
 }
 
 a {
@@ -72,11 +77,6 @@ a {
 #log-in span.psw {
   float: right;
   padding-top: 16px;
-}
-
-.wrapper {
-  position: relative;
-  overflow-x: hidden;
 }
 
 a.red-button {
@@ -361,6 +361,9 @@ nav .burger div {
 }
 
 @media (max-width: 1100px) {
+  #log-in {
+    width: 80%;
+  }
   .empty {
     position: relative;
     height: 68px;
@@ -489,6 +492,12 @@ nav .burger div {
   }
 }
 @media only screen and (max-width: 600px) {
+  nav .menu .logo {
+    background-image: url("../img/l.png");
+  }
+  #log-in {
+    width: 100%;
+  }
   a.red-button-order {
     padding: 10px 30px;
     width: 160px;
@@ -500,9 +509,14 @@ nav .burger div {
   .articles .article:nth-child(1) {
     padding: 30px 40px;
     margin-bottom: 10px;
+    background-image: url("../img/dana-devolk-x2cNcfz_xXU-unsplash.png");
   }
   .articles .article:nth-child(2) {
     padding: 30px 40px;
+    background-image: url("../img/aplikacja.png");
+  }
+  .header {
+    background-image: url("../img/Bitmapv.png");
   }
   .header .swiper .swiper-wrapper .swiper-page div {
     width: 100%;

@@ -8,7 +8,6 @@ const navSlide = () => {
     burger.addEventListener('click', () => {
         nav.classList.toggle('nav-active');
         user.classList.toggle('nav-active');
-        navFixed.classList.style.position = 'fixed';
 
     
        /*navLinks.foreach((link, index) => {
