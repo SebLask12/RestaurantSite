@@ -3,6 +3,7 @@ const overlay = document.querySelector('.overlay');
 function openLogForm() {
     logIn.style.display = "block";
     overlay.classList.remove('hidden');
+    overlay.classList.remove('hidden');
 }
 
 function closeLogForm() {

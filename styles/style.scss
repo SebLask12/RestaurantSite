@@ -346,6 +346,15 @@ nav {
         .apps {
             margin-bottom: 20px;
         }
+        a {
+            img {
+                position: relative;
+                transition: top 1s ease 0s;
+                &:hover {
+                    top: -5px;
+                }
+            }
+        }
 
         &:nth-child(1) {
             background-image: url('../img/dana-devolk-x2cNcfz_xXU-unsplash@2x.png');
@@ -411,10 +420,22 @@ nav {
     backdrop-filter: blur(3px);
     z-index: 2;
 }
+.empty {
+    display:none;
+}
 
 @media(max-width: 1100px) {
+    .empty {
+        position: relative;
+        height: 68px;
+        top: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
     .header {
         // height: 620px;
+        top:68px;
         height: 360px;
         background-image: url('../img/Bitmap@2x.png');
         background-repeat: no-repeat;
@@ -455,7 +476,6 @@ nav {
     .deliver {
 
         //width: 300px; //dopisane usunac
-
         .deliver-wrapper {
             animation: vertical-scroll 20s linear infinite both;
         }
@@ -476,7 +496,7 @@ nav {
     }
 
     .menu-links {
-        position: absolute;
+        position: fixed;
         right: 0px;
         height: 82vh;
         top: 68px;
@@ -523,6 +543,10 @@ nav {
     }
 
     nav {
+        position: fixed;
+        width: 90%;
+        background-color: white;
+        z-index: 3;
         .burger {
             display: block;
         }
@@ -542,7 +566,7 @@ nav {
     }
 
     .user-menu {
-        position: absolute;
+        position: fixed;
         top: 87vh;
         height: 15vh;
         right: 0;
@@ -561,11 +585,6 @@ nav {
 
 
 @media only screen and (max-width: 600px) {
-
-
-
-
-
 
     a.red-button-order {
         padding: 10px 30px;

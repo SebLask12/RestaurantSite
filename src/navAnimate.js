@@ -2,11 +2,13 @@ const navSlide = () => {
     const burger = document.querySelector('.burger');
     const nav = document.querySelector('.menu-links');
     const user = document.querySelector('.user-menu');
+    const navFixed = document.getElementsByName('nav');
     //const navLinks = document.querySelectorAll('.menu-links li');
 
     burger.addEventListener('click', () => {
         nav.classList.toggle('nav-active');
         user.classList.toggle('nav-active');
+        navFixed.classList.style.position = 'fixed';
 
     
        /*navLinks.foreach((link, index) => {
