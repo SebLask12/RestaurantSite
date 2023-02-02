@@ -1,2 +1,2 @@
 # RestaurantSite
-Strona przykładowej restauracji, elementy graficzne jak i układ został zaimplementowany na podstawie dostarczonych materiałów. Do realizacji projektu strony zostały wykorzystane narzędzia takie jak: HTML, SCSS, JS, SWIPER.
+The website of a sample restaurant, graphic elements as well as the layout was implemented on the basis of the provided materials. To implement the design of the site were used tools such as: HTML, SCSS, JS, SWIPER.
